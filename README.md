@@ -1,28 +1,28 @@
-# Crouton Tips   
+Crouton Tips      
 
-*   [My GitHub](https://github.com/Plextora)
+
+*   [Website Source Code](https://github.com/Plextora/crouton-tips)
 *   [My Games](https://plextora.itch.io)
+*   [My Website](https://plextora.github.io/Web-Page/)
 
-[Crouton Download](https://goo.gl/fd3zc)
+Important Links:
 
-[Crouton README](https://github.com/dnschneid/crouton#readme)
+[Crouton README.md](https://github.com/dnschneid/crouton#readme)
 
-[Website Source Code](https://github.com/Plextora/crouton-tips)
-
-[README Source Code](https://github.com/Plextora/crouton-tips/blob/master/README.md)
+[Crouton Download](https://goo.gl/fd3zc) 
 
 Crouton Tips
 ------------
-https://github.com/Plextora/crouton-tips
+
 **Tips for the software Crouton that allows Chromium OS users to use full linux desktops like XFCE or KDE**
 
-**Keep in mind that this README is still being worked on!**
+**Keep in mind that this website is still being worked on!**
 ============================================================
 
-If you encounter any grammatical errors or bugs on the website or README please report it on the
+If you encounter any grammatical errors or website bugs please report it on the
 -------------------------------------------------------------------------------
 
-**[GitHub Issues Page!](https://github.com/Plextora/crouton-tips/issues)**
+**[GitHub Issues Page!](https://github.com)**
 ---------------------------------------------
 
 **Synchronized clipboard with Chromium OS and Crouton on Xorg!**
@@ -73,9 +73,33 @@ All you have to do is boot into your chroot like this:
 
 And now your chroot will open and you can go back to Chrome OS and exit crosh!
 
-[⮝ Back to top ⮝](https://github.com/Plextora/crouton-tips#readme)
+**How to fix audio not working in Crouton**
+-------------------------------------------
 
-**More tips coming soon!**
-==========================
+If audio in Crouton isn't working for you, there is a very handy fix for this. And in my experience I have to use this command every time start up my chroot to get audio working. To fix this, start up your chroot. Go into the terminal, And type in this command:
+
+    pulseaudio --start
+
+Now, you should here some audio!
+
+### [Here's a audio test for you to make sure it's working!](https://www.youtube.com/watch?v=pSVoqmugJVM)
+
+**How to reduce load from ChromeOS Chrome**
+-------------------------------------------
+
+ChromeOS runs alot of Chrome processes. If you primarily use your chroot, use the -b command whenever you boot Crouton, and find Crouton very sluggish, this might be the fix for you! It kills alot of Chrome processes without breaking anything,
+
+#### **But any unsaved work will be lost!**
+
+Just copy paste the command below into your Linux Terminal.
+
+    ps ax -o sess,pgrp,pid,cmd | awk '$4 ~ /\\/chrome$/ { print $3 }' | xargs $nodo kill
+
+Currently on Chrome OS version 92, if you switch back to Chrome OS your Chromebook might freeze and open Chrome back open again, if this happens and you want them killed again just simply switch back to Crouton and run the command listed above again.
+
+[⮝ Back to top ⮝](github.com/Plextora/crouton-tips#readme)
+
+
+# More tips coming soon!
 
 This website/repo is created and mantained by [Plextora](https://github.com/Plextora)

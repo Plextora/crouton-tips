@@ -97,7 +97,7 @@ Just copy paste the command below into your Linux Terminal.
 
 Currently on Chrome OS version 92, if you switch back to Chrome OS your Chromebook might freeze and open Chrome back open again, if this happens and you want them killed again just simply switch back to Crouton and run the command listed above again.
 
-[⮝ Back to top ⮝](github.com/Plextora/crouton-tips#readme)
+[⬆️ Back to top ⬆️](https://github.com/Plextora/crouton-tips#readme)
 
 
 # More tips coming soon!

@@ -22,7 +22,7 @@ Crouton Tips
 If you encounter any grammatical errors or website bugs please report it on the
 -------------------------------------------------------------------------------
 
-**[GitHub Issues Page!](https://github.com)**
+**[GitHub Issues Page!](https://github.com/Plextora/crouton-tips/issues)**
 ---------------------------------------------
 
 **Synchronized clipboard with Chromium OS and Crouton on Xorg!**

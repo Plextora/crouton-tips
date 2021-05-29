@@ -97,6 +97,17 @@ Just copy paste the command below into your Linux Terminal.
 
 Currently on Chrome OS version 92, if you switch back to Chrome OS your Chromebook might freeze and open Chrome back open again, if this happens and you want them killed again just simply switch back to Crouton and run the command listed above again.
 
+**How to control audio volume in Crouton**
+------------------------------------------
+
+If you don't want to switch back to Chrome OS every time you want to turn up/down the volume, there's a fix for this!
+
+Crouton has a way to turn up/down the volume within your chroot without having to always switch to Chrome OS, and it affects Chrome OS as well so audio is synced between the two! All you have to do is go into your Linux terminal and copy paste this in:
+
+    alsamixer
+
+Then, you'll get a gui with a big vertical volume bar. You can use number keys 1-9 to quickly jump volume values (for example, pressing 1 goes to 10, 5 goes to 50, etc.) or you can use the arrow keys to go to more precise values. I recommend to keep the terminal open for quick volume changes. If you decide to keep your volume and not have it open, just simply close the terminal.
+
 [⬆️ Back to top ⬆️](https://github.com/Plextora/crouton-tips#readme)
 
 

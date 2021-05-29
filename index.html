@@ -164,10 +164,24 @@
                             <!-- End of pp audio control -->
                         </article>
 
+                        <article>
+                            <!-- Avoid data corruption and turn off sleep mode -->
+                            <h2><strong>Avoid data corruption and turn off sleep mode!</strong></h2>
+                            <p>ChromeOS by default has sleep mode turn on when you are inactive on your Chromebook. This feature actually still applies to Crouton and it could cause some problems, including data loss. So, in order to turn off sleep mode for ChromeOS and Crouton, go into ChromeOS settings, search "Sleep", and then click the first result. Set both options to "Keep display on" or "Turn off display". Just don't have it on the sleep option. And after that, it's done! No commands or anything for this tip!</p>
+                            <!-- End of pp data corruption -->
+                        </article>
+
+                        <article>
+                            <!-- Safely shutting down chroots -->
+                            <h2><strong>How to safely shut down chroots!</strong></h2>
+                            <p>If you're done with what you're doing in your chroot or Chromebook, it's important to know how to safely shut down the chroot without damaging the operating system. I learnt this the hard way when I forcefully shut down ChromeOS with the chroot still open and had to use a recovery image to save my Chromebook! In order to cleanly shut down the chroot, log out of the desktop environment you're in. <strong>DONT PRESS SHUT DOWN!!</strong> It should take you back to crosh and show progress of it shutting down the chroot. If you used -b while booting your chroot, I advise at least waiting 1-2 minutes depending on your Chromebook's speed. And then after that, you can shut down ChromeOS if you want to without doing any damage to the system!</p>
+                        </article>
 
 
+                        <article>
                         <!-- oh noes no more content!11!1!!!!1!!!1 -->
                             <h1><strong>More tips coming soon!</strong></h1>
+                        </article>
                 </main>
                 <footer>
                     <p>This website/repo is created and mantained by <a href="https://github.com/Plextora">Plextora</a></p>

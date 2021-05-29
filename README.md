@@ -10,7 +10,7 @@ Important Links:
 [Crouton README.md](https://github.com/dnschneid/crouton#readme)
 
 [Crouton Download](https://goo.gl/fd3zc) 
-
+------------
 Crouton Tips
 ------------
 
@@ -19,12 +19,15 @@ Crouton Tips
 **Keep in mind that this website is still being worked on!**
 ============================================================
 
+-------------------------------------------------------------------------------
 If you encounter any grammatical errors or website bugs please report it on the
 -------------------------------------------------------------------------------
 
+---------------------------------------------
 **[GitHub Issues Page!](https://github.com/Plextora/crouton-tips/issues)**
 ---------------------------------------------
 
+----------------------------------------------------------------
 **Synchronized clipboard with Chromium OS and Crouton on Xorg!**
 ----------------------------------------------------------------
 
@@ -32,11 +35,13 @@ If you're like me and love the benefit of a shared clipboard with Chrome OS and 
 
     sudo crouton -n happiness -r focal -t extension,xfce
 
+---------------------------------------------------------------------
 **What's the most lightweight DE (Desktop Environment) for Crouton?**
 ---------------------------------------------------------------------
 
 In my opinion, the most lightweight DE that Crouton has available is the [Enlightenment DE.](https://www.enlightenment.org) It's only 50mb, and it runs fast. But sadly, in my testing it only worked with Ubuntu Xenial, which is slowly becoming more and more out of date.
 
+--------------------------------
 **How to install Bionic Beaver**
 --------------------------------
 
@@ -62,6 +67,7 @@ which will install the **xserver-xorg-video-all** package. Now, finish your setu
 
 And now you have a Bionic Beaver chroot!
 
+-------------------------------------------------------------------------------
 **Tired of the annoying crosh window in the background? Here's how to fix it!**
 -------------------------------------------------------------------------------
 
@@ -73,6 +79,7 @@ All you have to do is boot into your chroot like this:
 
 And now your chroot will open and you can go back to Chrome OS and exit crosh!
 
+------------------------------------------
 **How to fix audio not working in Crouton**
 -------------------------------------------
 
@@ -84,6 +91,7 @@ Now, you should here some audio!
 
 ### [Here's a audio test for you to make sure it's working!](https://www.youtube.com/watch?v=pSVoqmugJVM)
 
+------------------------------------------
 **How to reduce load from ChromeOS Chrome**
 -------------------------------------------
 
@@ -97,6 +105,7 @@ Just copy paste the command below into your Linux Terminal.
 
 Currently on Chrome OS version 92, if you switch back to Chrome OS your Chromebook might freeze and open Chrome back open again, if this happens and you want them killed again just simply switch back to Crouton and run the command listed above again.
 
+------------------------------------------
 **How to control audio volume in Crouton**
 ------------------------------------------
 
@@ -107,6 +116,14 @@ Crouton has a way to turn up/down the volume within your chroot without having t
     alsamixer
 
 Then, you'll get a gui with a big vertical volume bar. You can use number keys 1-9 to quickly jump volume values (for example, pressing 1 goes to 10, 5 goes to 50, etc.) or you can use the arrow keys to go to more precise values. I recommend to keep the terminal open for quick volume changes. If you decide to keep your volume and not have it open, just simply close the terminal.
+------------------------------------
+**Avoid data corruption and turn off sleep mode!**
+ChromeOS by default has sleep mode turn on when you are inactive on your Chromebook. This feature actually still applies to Crouton and it could cause some problems, including data loss. So, in order to turn off sleep mode for ChromeOS and Crouton, go into ChromeOS settings, search "Sleep", and then click the first result. Set both options to "Keep display on" or "Turn off display". Just don't have it on the sleep option. And after that, it's done! No commands or anything for this tip!
+------------------------------------
+**How to safely shut down chroots!**
+------------------------------------
+
+If you're done with what you're doing in your chroot or Chromebook, it's important to know how to safely shut down the chroot without damaging the operating system. I learnt this the hard way when I forcefully shut down ChromeOS with the chroot still open and had to use a recovery image to save my Chromebook! In order to cleanly shut down the chroot, log out of the desktop environment you're in. **DONT PRESS SHUT DOWN!!** It should take you back to crosh and show progress of it shutting down the chroot. If you used -b while booting your chroot, I advise at least waiting 1-2 minutes depending on your Chromebook's speed. And then after that, you can shut down ChromeOS if you want to without doing any damage to the system!
 
 [⬆️ Back to top ⬆️](https://github.com/Plextora/crouton-tips#readme)
 

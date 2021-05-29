@@ -116,9 +116,12 @@ Crouton has a way to turn up/down the volume within your chroot without having t
     alsamixer
 
 Then, you'll get a gui with a big vertical volume bar. You can use number keys 1-9 to quickly jump volume values (for example, pressing 1 goes to 10, 5 goes to 50, etc.) or you can use the arrow keys to go to more precise values. I recommend to keep the terminal open for quick volume changes. If you decide to keep your volume and not have it open, just simply close the terminal.
+
 ------------------------------------
+
 **Avoid data corruption and turn off sleep mode!**
 ChromeOS by default has sleep mode turn on when you are inactive on your Chromebook. This feature actually still applies to Crouton and it could cause some problems, including data loss. So, in order to turn off sleep mode for ChromeOS and Crouton, go into ChromeOS settings, search "Sleep", and then click the first result. Set both options to "Keep display on" or "Turn off display". Just don't have it on the sleep option. And after that, it's done! No commands or anything for this tip!
+
 ------------------------------------
 **How to safely shut down chroots!**
 ------------------------------------

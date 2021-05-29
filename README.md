@@ -128,6 +128,22 @@ ChromeOS by default has sleep mode turn on when you are inactive on your Chromeb
 
 If you're done with what you're doing in your chroot or Chromebook, it's important to know how to safely shut down the chroot without damaging the operating system. I learnt this the hard way when I forcefully shut down ChromeOS with the chroot still open and had to use a recovery image to save my Chromebook! In order to cleanly shut down the chroot, log out of the desktop environment you're in. **DONT PRESS SHUT DOWN!!** It should take you back to crosh and show progress of it shutting down the chroot. If you used -b while booting your chroot, I advise at least waiting 1-2 minutes depending on your Chromebook's speed. And then after that, you can shut down ChromeOS if you want to without doing any damage to the system!
 
+-----------------------------------------------
+**How to update chroots and add more targets!**
+-----------------------------------------------
+
+If you're a beginner to Crouton and is still trying to find out the best targets for your needs, you don't need to delete your chroot over and over again! Use -u! For example:
+
+    sudo crouton -n focal -t xfce,extension,xiwi -u
+
+Using -n specifies which chroot to update. If you didn't name your chroot, it's automatically named to the version of linux you installed, for example, if you installed ubuntu xenial the name of the chroot would be "xenial". You can also abuse -u to install multiple desktop environments, like installing xfce and lxde together!
+
+    sudo crouton -t xfce -r focal
+
+And then later:
+
+    sudo crouton -t lxde -r focal -u
+
 [⬆️ Back to top ⬆️](https://github.com/Plextora/crouton-tips#readme)
 
 
